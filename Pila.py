@@ -1,6 +1,7 @@
 # Implementación de una pila estática
+# TAD. Tipo de dato abstracto
 
-class Pila:
+class PilaEstatica:
     __tamPila = int(0)
     __listaPila = []
     __cima = 0
