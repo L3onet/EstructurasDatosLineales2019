@@ -1,3 +1,5 @@
+# Implementación de una pila estática
+
 class Pila:
     __tamPila = int(0)
     __listaPila = []
@@ -44,8 +46,32 @@ class Pila:
     def tamPila(self):
         return len(self.__listaPila)
 
+#Implementación de una pila dinámica
 
+class PilaDinamica:
+    __listaPila = []
 
+    def __init__(self):
+        self.__listaPila = []
 
+    def Insertar(self, elemento):
+        self.__listaPila.append(elemento)
 
+    def PilaVacia(self):
+        if len(self.__listaPila) == 0:
+            return True
+        else:
+            return False
 
+    def Quitar(self):
+        if self.PilaVacia():
+            return False
+        else:
+            elemento = self.__listaPila.pop()
+            return elemento
+
+    def limpiarPila(self):
+        self.__listaPila.clear()
+
+    def tamPila(self):
+        return len(self.__listaPila)
