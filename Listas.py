@@ -14,8 +14,7 @@ class linked_list:
     def add_at_front(self, data):
         self.head = node(data=data, next=self.head)
 
-        # Método para verificar si la estructura de datos esta vacia
-
+    # Método para verificar si la estructura de datos esta vacia
     def is_empty(self):
         return self.head == None
 
@@ -53,7 +52,7 @@ class linked_list:
     def print_list(self):
         node = self.head
         while node != None:
-            print(node.data, end=" => ")
+            print(node.data)
             node = node.next
 
 
